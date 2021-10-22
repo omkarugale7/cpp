@@ -25,6 +25,9 @@ int main()
     int n, p;
     cin >> n >> p;
     cout << UpdateBit(n, p, 0) << endl;
-    cout << UpdateBit(n, p, 1) << endl;
+    // cout << ClearBit(n, p) << endl;
+    // cout << SetBit(n, p) << endl;
+    // cout << GetBit(n, p) << endl;
+
     return 0;
 }

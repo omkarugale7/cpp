@@ -7,12 +7,7 @@ void SubSet(int arr[], int n)
     {
         for (int j = 0; j < n; j++)
         {
-            if ((i & (1 << j)) == 0)
-            {
-                break;
-            }
-
-            else if (i & (1 << j))
+            if (i & (1 << j))
             {
                 cout << arr[j] << " ";
             }
