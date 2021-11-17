@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 int main()
 {
@@ -19,11 +18,12 @@ int main()
     {
         if (num[r][c] == k)
         {
-            return true;
+            a = true;
+            break;
         }
         else if (num[r][c] > k)
         {
-            c--;
+            r++
         }
         else
         {
