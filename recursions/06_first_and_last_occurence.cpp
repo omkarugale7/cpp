@@ -1,20 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
-int first(int n, int arr[], int k, int i)
-{
-    if (i == n)
-    {
-        return -1;
-    }
-
-    if (arr[i] == k)
-    {
-        return i;
-    }
-
-    return first(n, arr, k, i + 1);
-}
 int end(int n, int arr[], int k, int i)
 {
     if (i == n)
@@ -33,16 +19,21 @@ int end(int n, int arr[], int k, int i)
     }
     return -1;
 }
+int first(int n, int arr[], int k, int i)
+{
+    if (i == n)
+        return -1;
+    if (arr[i] == k)
+        return i;
+    return first(n, arr, k, i + 1);
+}
 int main()
 {
     int n, k;
     cin >> n >> k;
     int arr[n];
-
     for (int i = 0; i < n; i++)
-    {
         cin >> arr[i];
-    }
     cout << first(n, arr, k, 0) << " " << end(n, arr, k, 0) << endl;
     return 0;
 }

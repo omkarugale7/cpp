@@ -16,7 +16,7 @@ int main()
     }
     for (auto num : v)
     {
-        cout << num << endl;
+        cout << num << endl;     
     }
     return 0;
 }

@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     vector<int> v;
-    v.push_back(1);
+    v.push_back(1);    // 	It adds a new element at the end.
     v.push_back(2);
     v.push_back(3);                    // we pushed 1 , 2,3 in vector
                                        // we can traverse through vector same as do for an array
@@ -27,7 +27,7 @@ int main()
         cout << element << " ";
     }
     cout << endl;
-    v.pop_back(); // end element gets deleted
+    v.pop_back(); // end element gets deleted or we can It removes a last element from the vector.
     // so now vector has 1 , 2 as elements and not 1 2 3
 
     vector<int> v2(3, 7); // we created another vector named v2 here we declared the size too 2 parameter in bracket
