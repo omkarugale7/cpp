@@ -19,6 +19,7 @@ class B : public A // this means the public and protected  attributes and member
 public:
 };
 
+
 using namespace std;
 int main()
 {

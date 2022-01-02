@@ -26,15 +26,22 @@ int ClearBitInRange(int n, int i, int j)
     int b = (1 << i) - 1;
     return (n & (a | b));
 }
+int NumberOfSetBits(int n)
+{
+    int count = 0;
+    while (n)
+    {
+        if (n & 1)
+            count++;
+        n = n >> 1;
+    }
+    return count;
+}
 int main()
 {
-    int n, p;
-    cin >> n >> p;
-    cout << UpdateBit(n, p, 0) << endl;
-    // cout << ClearBit(n, p) << endl;
-    cout << ClearBitInRange(63,2,4) << endl;
-    // cout << SetBit(n, p) << endl;
-    // cout << GetBit(n, p) << endl;
-
+    int n, m, i, j;
+    cin >> n >> m >> i >> j;
+    cout << ((n << i) | ClearBitInRange(m, i, j)) << endl;
+    cout << NumberOfSetBits(15) << endl;
     return 0;
 }

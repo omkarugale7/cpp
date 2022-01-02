@@ -15,7 +15,7 @@ int main()
     {
         xorsum = xorsum ^ arr[i];
     }
-    int num1 = xorsum;
+    int x = xorsum;
     int getbit = 0, count = 0;
     while (getbit != 1)
     {
@@ -25,17 +25,17 @@ int main()
     }
 
     int something = 1 << (count - 1);
-    int xrsum = 0;
+    int num1 = 0;
     for (int i = 0; i < n; i++)
     {
 
         if ((arr[i] & something) == 0)
         {
-            xrsum = xrsum ^ arr[i];
+            num1 = num1 ^ arr[i];
         }
     }
-    int num2 = xrsum ^ num1;
-    cout << xrsum << " " << num2;
+    int num2 = num1 ^ x;
+    cout << num1 << " " << num2;
 
     return 0;
 }
