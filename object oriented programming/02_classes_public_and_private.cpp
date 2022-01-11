@@ -13,7 +13,9 @@ public:
     {
         name = s;
     }
-    void GetName()
+    void GetName() // this is also an example of encapsulation
+                   //  we can say that here, the variable name and the functions getname() and setname() are
+                   //  binded together which is nothing but encapsulation.
     {
         cout << " name = " << name << endl;
     }

@@ -30,9 +30,9 @@ public:
         age = a.age;
         gender = a.gender;
     }
-    bool operator+(student &a)
+    bool operator+(student &d)
     {
-        if (name == a.name && age == a.age && gender == a.gender)
+        if (name == d.name && age == d.age && gender == d.gender)
             return true;
         else
             return false;
@@ -45,11 +45,21 @@ int main()
     student b;
     student c = a;
     c.printinfo();
+    student x("peter", 19, 1);
+    x.printinfo();
     if (c + a)            // this is operator overloading we defined + (plus) to work as ==
         cout << "same" << endl;
     else
         cout << "not same" << endl;
     if (b + a)            // this is operator overloading we defined + (plus) to work as ==
+        cout << "same" << endl;
+    else
+        cout << "not same" << endl;
+    if (c + x)            // this is operator overloading we defined + (plus) to work as ==
+        cout << "same" << endl;
+    else
+        cout << "not same" << endl;
+    if (b + x)            // this is operator overloading we defined + (plus) to work as ==
         cout << "same" << endl;
     else
         cout << "not same" << endl;
