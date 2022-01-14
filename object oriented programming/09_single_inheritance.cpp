@@ -10,7 +10,7 @@ class A
 {
 public:
     void funcA()
-    {
+    {                  
         cout << "base class inherited! from A" << endl;
     }
 };
@@ -18,7 +18,6 @@ class B : public A // this means the public and protected  attributes and member
 {                  // note: private data members are not inherited
 public:
 };
-
 
 using namespace std;
 int main()

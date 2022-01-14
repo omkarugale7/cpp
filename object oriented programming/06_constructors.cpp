@@ -31,12 +31,12 @@ public:
     {
         cout << "name = " << name << " age = " << age << " gender = " << gender << endl;
     }
-    student(student &a)
+    student(student &x)
     {
         cout << "copy constructor" << endl;
-        name = a.name;
-        age = a.age;
-        gender = a.gender;
+        name = x.name;
+        age = x.age;
+        gender = x.gender;
     }
     bool operator+(student &a)
     {
@@ -58,15 +58,15 @@ int main()
                    // and if we dont make any default constructor and create an object and dont pass any parameters it'll
                    // throw error
     student c = a; // also can be declared as => student c (a);
-    // c.printinfo();
-    if (c + a)            // this is operator overloading we defined + (plus) to work as ==
-        cout << "same" << endl;
-    else
-        cout << "not same" << endl;
-    if (b + a)            // this is operator overloading we defined + (plus) to work as ==
-        cout << "same" << endl;
-    else
-        cout << "not same" << endl;
+    c.printinfo();
+    // if (c + a)            // this is operator overloading we defined + (plus) to work as ==
+    //     cout << "same" << endl;
+    // else
+    //     cout << "not same" << endl;
+    // if (b + a)            // this is operator overloading we defined + (plus) to work as ==
+    //     cout << "same" << endl;
+    // else
+    //     cout << "not same" << endl;
 
     return 0;
 }

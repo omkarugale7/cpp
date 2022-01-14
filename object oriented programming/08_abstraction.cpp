@@ -1,6 +1,6 @@
 #include <iostream>
 #include <bits/stdc++.h>
-// encapsulation == hiding 'sensitive' data from user.
+// abstraction == hiding 'sensitive' data from user.
 using namespace std;
 class A // access modifiers => public,private,protected
 {
